@@ -1,5 +1,6 @@
 
 import './divtable.css';
+
  
 import React from 'react';
 import Amplify, { graphqlOperation }  from "aws-amplify";
