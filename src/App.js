@@ -1,6 +1,7 @@
 
 import './divtable.css';
 
+
  
 import React from 'react';
 import Amplify, { graphqlOperation }  from "aws-amplify";
@@ -17,9 +18,6 @@ Auth.configure(aws_config);
 class App extends React.Component {
   render() {
 
-    const t1 = Date.now();
-    console.log("Start Time: "+ t1);
-
     return (
       <Connect
         query={graphqlOperation(queries.listTodos)}
@@ -35,10 +33,6 @@ class App extends React.Component {
         if (error) return (<h3>Error</h3>);
         if (loading || !listTodos) return (<h3>Loading...</h3>);
        
-        const t2 = Date.now();
-        console.log("End Time: "+ t2);
-        console.log("diff: " + (t2-t1));
-
         listTodos.items.sort();
         return(
           <div className="divTable redTable">
