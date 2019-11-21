@@ -1,0 +1,19 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "slush3-dev-20191120151032-authRole",
+            "UnauthRoleArn": "arn:aws:iam::926079615743:role/slush3-dev-20191120151032-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::926079615743:role/slush3-dev-20191120151032-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "slush3-dev-20191120151032-deployment",
+            "UnauthRoleName": "slush3-dev-20191120151032-unauthRole",
+            "StackName": "slush3-dev-20191120151032",
+            "StackId": "arn:aws:cloudformation:eu-west-1:926079615743:stack/slush3-dev-20191120151032/e5887230-0ba7-11ea-80ab-0abd335268a4"
+        },
+        "categories": {
+            "auth": {
+                "slush3c0ca8801": {}
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+	"api": {
+		"slush3": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"securityType": "API_KEY"
+			}
+		}
+	},
+	"auth": {
+		"slush3c0ca8801": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}
